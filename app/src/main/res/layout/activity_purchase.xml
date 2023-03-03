@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackFromPurchasePage"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            app:icon="@drawable/ic_back"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="8dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/cinescopeloggo"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/noAds"
+                android:layout_width="230dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/menu2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No ads for 5$"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPurchaseRemoveAds"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="purchase"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#AA14F0"
+                    app:strokeColor="@color/white"
+                    android:backgroundTint="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upcoming"
+                android:layout_width="230dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/menu2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming movies for 4$"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPurchaseUpcoming"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="purchase"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#AA14F0"
+                    app:strokeColor="@color/white"
+                    android:backgroundTint="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ultimate"
+                android:layout_width="230dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/menu2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ultimate pack for 7$"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPurchaseUltimate"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="purchase"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#AA14F0"
+                    app:strokeColor="@color/white"
+                    android:backgroundTint="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

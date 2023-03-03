@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSettings"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:icon="@drawable/ic_settings"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPremium"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:text="@string/premium"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:icon="@drawable/ic_crown"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_below="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/cinescopeloggo"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore what's"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:fontFamily="@font/dohyeon"
+            android:textColor="#AA14F0"
+            android:gravity="center"
+            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/topRated"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/menu2_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top Rated Movies"
+                        android:textStyle="bold"
+                        android:textSize="26dp"
+                        android:layout_gravity="center"
+                        android:textColor="#EEEEEE"
+                       />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popularMovies"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular Movies"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:layout_gravity="center"
+                    android:textColor="#EEEEEE"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upcoming"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/menu2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming Movies"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:layout_gravity="center"
+                    android:textColor="#EEEEEE"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+
+
+</RelativeLayout>
